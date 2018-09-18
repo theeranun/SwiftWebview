@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TTP_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="rentalcars" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyO-GG-S68">
+                                <rect key="frame" x="131" y="154" width="112" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Rentalcars.com"/>
+                                <connections>
+                                    <action selector="doRentalcars:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1HH-Vw-AJQ"/>
+                                    <segue destination="l6y-Sn-G32" kind="show" identifier="rentalcars" id="xdN-Fm-Q34"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="booking" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfL-ha-Vci">
+                                <rect key="frame" x="140" y="87" width="95" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Booking.com"/>
+                                <connections>
+                                    <action selector="doBooking:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Syc-AN-qle"/>
+                                    <segue destination="l6y-Sn-G32" kind="show" identifier="booking" id="E4I-cu-zMb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Web View-->
+        <scene sceneID="eeK-3I-1ry">
+            <objects>
+                <viewController id="l6y-Sn-G32" customClass="WebViewController" customModule="TTP_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cpr-2D-T6Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YdC-NN-TMn" userLabel="ViewMain">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <subviews>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHY-Bb-oTg">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9W-PA-XiP">
+                                        <rect key="frame" x="0.0" y="40" width="375" height="44"/>
+                                        <items>
+                                            <navigationItem title="Title" id="SFk-Ql-tgo">
+                                                <barButtonItem key="leftBarButtonItem" style="plain" id="klq-Yy-bp8">
+                                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OCd-9A-FbT">
+                                                        <rect key="frame" x="16" y="7" width="34" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Back"/>
+                                                        <connections>
+                                                            <segue destination="BYZ-38-t0r" kind="show" id="9Yb-BH-MBD"/>
+                                                        </connections>
+                                                    </button>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Y9W-PA-XiP" firstAttribute="leading" secondItem="YdC-NN-TMn" secondAttribute="leading" id="33Y-vl-iWn"/>
+                                    <constraint firstAttribute="trailing" secondItem="uHY-Bb-oTg" secondAttribute="trailing" id="7mR-kZ-QcO"/>
+                                    <constraint firstItem="uHY-Bb-oTg" firstAttribute="leading" secondItem="YdC-NN-TMn" secondAttribute="leading" id="BQE-tc-UEY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y9W-PA-XiP" secondAttribute="trailing" id="Nse-7Q-eWa"/>
+                                    <constraint firstItem="Y9W-PA-XiP" firstAttribute="top" secondItem="YdC-NN-TMn" secondAttribute="top" constant="40" id="UHo-wd-ZzF"/>
+                                    <constraint firstAttribute="bottom" secondItem="uHY-Bb-oTg" secondAttribute="bottom" id="mEe-xo-iQt"/>
+                                    <constraint firstItem="uHY-Bb-oTg" firstAttribute="top" secondItem="YdC-NN-TMn" secondAttribute="top" id="qaA-60-p7G"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YdC-NN-TMn" firstAttribute="top" secondItem="cpr-2D-T6Q" secondAttribute="top" id="8fh-e3-CLW"/>
+                            <constraint firstItem="YdC-NN-TMn" firstAttribute="trailing" secondItem="Ih9-uW-bE6" secondAttribute="trailing" id="PyX-Gf-km9"/>
+                            <constraint firstItem="YdC-NN-TMn" firstAttribute="leading" secondItem="Ih9-uW-bE6" secondAttribute="leading" id="cfv-ti-Ocw"/>
+                            <constraint firstItem="YdC-NN-TMn" firstAttribute="bottom" secondItem="Ih9-uW-bE6" secondAttribute="bottom" id="rDX-eN-c9G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ih9-uW-bE6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Web View" id="e3M-gL-jbx">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="hzd-jg-FS6"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="WebView" destination="uHY-Bb-oTg" id="GM0-dZ-EaL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LOq-ww-9YS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1456.8" y="44.527736131934034"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xdN-Fm-Q34"/>
+    </inferredMetricsTieBreakers>
+</document>
