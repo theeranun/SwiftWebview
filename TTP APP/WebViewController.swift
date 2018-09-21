@@ -14,9 +14,12 @@ class WebViewController: UIViewController {
     @IBOutlet weak var WebView: WKWebView!
     
     var urlString = String()
+    var navTitle = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = navTitle
         
         let webUrl = URL(string: urlString)
         let request = URLRequest(url: webUrl!)

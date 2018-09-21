@@ -15,6 +15,8 @@
 		891DA3EA2150F1E500D95C55 /* TTP_APPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DA3E92150F1E500D95C55 /* TTP_APPTests.swift */; };
 		891DA3F52150F1E600D95C55 /* TTP_APPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DA3F42150F1E600D95C55 /* TTP_APPUITests.swift */; };
 		891DA4032150F23200D95C55 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DA4022150F23200D95C55 /* WebViewController.swift */; };
+		899534CF21524685006E5BFA /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899534CD21524685006E5BFA /* ItemCell.swift */; };
+		899534D021524685006E5BFA /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 899534CE21524685006E5BFA /* ItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		891DA3F42150F1E600D95C55 /* TTP_APPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTP_APPUITests.swift; sourceTree = "<group>"; };
 		891DA3F62150F1E600D95C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		891DA4022150F23200D95C55 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		899534CD21524685006E5BFA /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		899534CE21524685006E5BFA /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,14 @@
 		891DA3D32150F1E400D95C55 /* TTP APP */ = {
 			isa = PBXGroup;
 			children = (
+				899534C821524608006E5BFA /* ItemCell */,
 				891DA3D42150F1E400D95C55 /* AppDelegate.swift */,
 				891DA3D62150F1E400D95C55 /* ViewController.swift */,
+				891DA4022150F23200D95C55 /* WebViewController.swift */,
 				891DA3D82150F1E400D95C55 /* Main.storyboard */,
 				891DA3DB2150F1E500D95C55 /* Assets.xcassets */,
 				891DA3DD2150F1E500D95C55 /* LaunchScreen.storyboard */,
 				891DA3E02150F1E500D95C55 /* Info.plist */,
-				891DA4022150F23200D95C55 /* WebViewController.swift */,
 			);
 			path = "TTP APP";
 			sourceTree = "<group>";
@@ -126,6 +131,15 @@
 				891DA3F62150F1E600D95C55 /* Info.plist */,
 			);
 			path = "TTP APPUITests";
+			sourceTree = "<group>";
+		};
+		899534C821524608006E5BFA /* ItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				899534CD21524685006E5BFA /* ItemCell.swift */,
+				899534CE21524685006E5BFA /* ItemCell.xib */,
+			);
+			path = ItemCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899534D021524685006E5BFA /* ItemCell.xib in Resources */,
 				891DA3DF2150F1E500D95C55 /* LaunchScreen.storyboard in Resources */,
 				891DA3DC2150F1E500D95C55 /* Assets.xcassets in Resources */,
 				891DA3DA2150F1E400D95C55 /* Main.storyboard in Resources */,
@@ -259,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899534CF21524685006E5BFA /* ItemCell.swift in Sources */,
 				891DA3D72150F1E400D95C55 /* ViewController.swift in Sources */,
 				891DA4032150F23200D95C55 /* WebViewController.swift in Sources */,
 				891DA3D52150F1E400D95C55 /* AppDelegate.swift in Sources */,
