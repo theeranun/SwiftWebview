@@ -17,12 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="2Pq-Dn-8w0">
                                 <rect key="frame" x="0.0" y="64" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dN5-bf-l5n">
                                 <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+=======
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dN5-bf-l5n">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+>>>>>>> deab629c2b3b728bee9979a7cad2bf063650bde1
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jGy-Rr-1qU">
                                     <size key="itemSize" width="120" height="154"/>
@@ -90,7 +95,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="2300" y="88.605697151424295"/>
+=======
+            <point key="canvasLocation" x="2300" y="88.669950738916256"/>
+>>>>>>> deab629c2b3b728bee9979a7cad2bf063650bde1
         </scene>
         <!--Web View-->
         <scene sceneID="eeK-3I-1ry">
@@ -135,7 +144,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3PG-S8-54B" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hhb-c4-MrO">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+=======
+>>>>>>> deab629c2b3b728bee9979a7cad2bf063650bde1
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
