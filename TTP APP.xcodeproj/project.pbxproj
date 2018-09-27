@@ -18,11 +18,6 @@
 		891DA3EA2150F1E500D95C55 /* TTP_APPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DA3E92150F1E500D95C55 /* TTP_APPTests.swift */; };
 		891DA3F52150F1E600D95C55 /* TTP_APPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DA3F42150F1E600D95C55 /* TTP_APPUITests.swift */; };
 		891DA4032150F23200D95C55 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DA4022150F23200D95C55 /* WebViewController.swift */; };
-<<<<<<< HEAD
-=======
-		899534CF21524685006E5BFA /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899534CD21524685006E5BFA /* ItemCell.swift */; };
-		899534D021524685006E5BFA /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 899534CE21524685006E5BFA /* ItemCell.xib */; };
->>>>>>> deab629c2b3b728bee9979a7cad2bf063650bde1
 		A8A27BA72158D21E0041B98E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A27BA62158D21E0041B98E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -61,11 +56,6 @@
 		891DA3F42150F1E600D95C55 /* TTP_APPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTP_APPUITests.swift; sourceTree = "<group>"; };
 		891DA3F62150F1E600D95C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		891DA4022150F23200D95C55 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
-		899534CD21524685006E5BFA /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
-		899534CE21524685006E5BFA /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
->>>>>>> deab629c2b3b728bee9979a7cad2bf063650bde1
 		A8A27BA62158D21E0041B98E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -463,21 +453,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-<<<<<<< HEAD
 				DEVELOPMENT_TEAM = "";
-=======
-				DEVELOPMENT_TEAM = UC9UCYZJZ9;
->>>>>>> deab629c2b3b728bee9979a7cad2bf063650bde1
 				INFOPLIST_FILE = "TTP APP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = com.ttp.ttp;
-=======
-				PRODUCT_BUNDLE_IDENTIFIER = com.tango.ttp;
->>>>>>> deab629c2b3b728bee9979a7cad2bf063650bde1
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,21 +471,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-<<<<<<< HEAD
 				DEVELOPMENT_TEAM = "";
-=======
-				DEVELOPMENT_TEAM = UC9UCYZJZ9;
->>>>>>> deab629c2b3b728bee9979a7cad2bf063650bde1
 				INFOPLIST_FILE = "TTP APP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = com.ttp.ttp;
-=======
-				PRODUCT_BUNDLE_IDENTIFIER = com.tango.ttp;
->>>>>>> deab629c2b3b728bee9979a7cad2bf063650bde1
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
