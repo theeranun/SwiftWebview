@@ -64,4 +64,11 @@ class ProductDatasource: NSObject, UICollectionViewDataSource {
         
         return cell
     }
+    
+    //Section header view
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let sectionHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeaderView", for: indexPath) as! SectionHeaderView
+        
+        return sectionHeaderView
+    }
 }

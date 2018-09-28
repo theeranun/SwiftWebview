@@ -12,13 +12,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var searchBarTopConstraint: NSLayoutConstraint!
     
     var presenter: ProductPresenter!
-    var searchBarBoundsY:CGFloat = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Tuk Tuk Pass"
         setup()
         
         presenter.fill()
@@ -47,10 +48,32 @@ class ViewController: UIViewController {
         searchBar.delegate = presenter
         collectionView.dataSource = presenter.datasource
         collectionView.delegate = presenter
+        
+        searchBarTopConstraint.constant = 0.0
+        addCollectionViewObserver()
+    }
+    
+    func addCollectionViewObserver(){
+        collectionView.addObserver(self, forKeyPath: "contentOffset", options: [.new, .old], context: nil)
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+
+        if let keypath = keyPath, keypath == "contentOffset", let collectionView = object as? UICollectionView {
+            searchBarTopConstraint.constant = -1 * collectionView.contentOffset.y
+        }
     }
     
     func reloadView(){
         collectionView.reloadData()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return.lightContent
+    }
+    
+    deinit {
+        collectionView.removeObserver(self, forKeyPath: "contentOffset")
     }
 }
 
