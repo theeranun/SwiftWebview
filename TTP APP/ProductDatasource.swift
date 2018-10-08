@@ -20,7 +20,7 @@ class ProductDatasource: NSObject, UICollectionViewDataSource {
             Product(image: UIImage(named: "rentalcars")!, title: "Car Rental", url: "https://www.rentalcars.com"),
             Product(image: UIImage(named: "klook")!, title: "Excursion", url: "https://www.klook.com"),
             Product(image: UIImage(named: "bellugg")!, title: "Baggage Delivery", url: "https://system.bellugg.com/Booking/LuggageDelivery"),
-            Product(image: UIImage(named: "12goasia")!, title: "TravelTickets", url: "https://12go.asia"),
+            Product(image: UIImage(named: "12goasia")!, title: "TravelTickets", url: "https://12go.asia/?z=2120044"),
             Product(image: UIImage(named: "grab")!, title: "Taxi", url: "https://www.grab.com/th/en/"),
             Product(image: UIImage(named: "pamba")!, title: "RideShare", url: "https://www.pambashare.com/"),
             Product(image: UIImage(named: "now")!, title: "Food Delivery", url: "https://www.now.in.th"),
@@ -65,10 +65,4 @@ class ProductDatasource: NSObject, UICollectionViewDataSource {
         return cell
     }
     
-    //Section header view
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let sectionHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeaderView", for: indexPath) as! SectionHeaderView
-        
-        return sectionHeaderView
-    }
 }

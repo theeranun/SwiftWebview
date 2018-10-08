@@ -16,6 +16,8 @@ class ProductPresenter: NSObject, UISearchBarDelegate, UICollectionViewDelegate,
     var estimateWidth = 160.0
     var cellMarginSize = 16.0
     
+    var slideImages = [UIImage(named: "banner1"), UIImage(named: "banner2"), UIImage(named: "banner3")]
+    
     init(viewController: ViewController?) {
         super.init()
         
@@ -71,22 +73,24 @@ class ProductPresenter: NSObject, UISearchBarDelegate, UICollectionViewDelegate,
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 15.0, left: 15.0, bottom: 15.0, right: 15.0)
+        return UIEdgeInsets(top: 15.0, left: 0, bottom: 15.0, right: 0)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let estimatedWidth = CGFloat(estimateWidth)
-        let cellCount = floor(CGFloat(collectionView.frame.size.width) / estimatedWidth)
-        let margin = CGFloat(cellMarginSize * 2)
-        let width = (collectionView.frame.size.width - CGFloat(cellMarginSize) * (cellCount - 1) - margin) / cellCount
-        
-        return CGSize(width: width, height: width)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//
+//        let estimatedWidth = CGFloat(estimateWidth)
+//        let cellCount = floor(CGFloat(collectionView.frame.size.width) / estimatedWidth)
+//        let margin = CGFloat(cellMarginSize * 2)
+//        let width = (collectionView.frame.size.width - CGFloat(cellMarginSize) * (cellCount - 1) - margin) / cellCount
+//
+//        return CGSize(width: width, height: width)
+//    }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: 200)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+//        
+//        return CGSize(width: collectionView.frame.width, height: 200)
+//    }
+    
     
     
     

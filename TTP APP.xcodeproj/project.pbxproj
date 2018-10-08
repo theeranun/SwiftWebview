@@ -19,7 +19,7 @@
 		891DA3F52150F1E600D95C55 /* TTP_APPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DA3F42150F1E600D95C55 /* TTP_APPUITests.swift */; };
 		891DA4032150F23200D95C55 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891DA4022150F23200D95C55 /* WebViewController.swift */; };
 		893A8F76215E1050005552B3 /* ProductNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A8F75215E1050005552B3 /* ProductNavigationController.swift */; };
-		893A8F78215E4F78005552B3 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A8F77215E4F78005552B3 /* SectionHeaderView.swift */; };
+		896893DA216B2134006CC4CF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896893D9216B2134006CC4CF /* SearchViewController.swift */; };
 		A8A27BA72158D21E0041B98E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A27BA62158D21E0041B98E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +59,7 @@
 		891DA3F62150F1E600D95C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		891DA4022150F23200D95C55 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		893A8F75215E1050005552B3 /* ProductNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNavigationController.swift; sourceTree = "<group>"; };
-		893A8F77215E4F78005552B3 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		896893D9216B2134006CC4CF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A8A27BA62158D21E0041B98E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -123,7 +123,7 @@
 				8913F6F6215B72D000B424BA /* ProductDatasource.swift */,
 				8913F6FA215B74BB00B424BA /* ProductCell.swift */,
 				8913F6FC215B764F00B424BA /* Product.swift */,
-				893A8F77215E4F78005552B3 /* SectionHeaderView.swift */,
+				896893D9216B2134006CC4CF /* SearchViewController.swift */,
 			);
 			path = "TTP APP";
 			sourceTree = "<group>";
@@ -280,8 +280,8 @@
 				8913F6FD215B764F00B424BA /* Product.swift in Sources */,
 				891DA3D72150F1E400D95C55 /* ViewController.swift in Sources */,
 				8913F6F7215B72D000B424BA /* ProductDatasource.swift in Sources */,
+				896893DA216B2134006CC4CF /* SearchViewController.swift in Sources */,
 				893A8F76215E1050005552B3 /* ProductNavigationController.swift in Sources */,
-				893A8F78215E4F78005552B3 /* SectionHeaderView.swift in Sources */,
 				891DA4032150F23200D95C55 /* WebViewController.swift in Sources */,
 				891DA3D52150F1E400D95C55 /* AppDelegate.swift in Sources */,
 				8913F6FB215B74BB00B424BA /* ProductCell.swift in Sources */,
