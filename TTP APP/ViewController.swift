@@ -17,7 +17,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     //var slideImages = [UIImage(named: "banner1"), UIImage(named: "banner2"), UIImage(named: "banner3")]
     
     var slideImages: [String] = ["banner1", "banner2", "banner3"]
-    var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+    var frame = CGRect(x: 0, y: 0, width: 0, height: 200)
     
     var presenter: ProductPresenter!
     
@@ -26,15 +26,22 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         title = "Tuk Tuk Pass"
         
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        
         //Image Slide
         pageControl.numberOfPages = slideImages.count
         for i in 0..<slideImages.count{
             frame.origin.x = scrollView.frame.size.width * CGFloat(i)
+            frame.size.height = 200
             frame.size = scrollView.frame.size
+            
+            print(frame.height)
             
             let imageView = UIImageView(frame: frame)
             imageView.image = UIImage(named: slideImages[i])
-            imageView.contentMode = .scaleAspectFit
+            imageView.contentMode = .scaleAspectFill
             
             self.scrollView.addSubview(imageView)
             
