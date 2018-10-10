@@ -90,23 +90,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="154"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-<<<<<<< HEAD
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Gr-dR-ZJB">
-=======
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Gr-dR-ZJB">
->>>>>>> 6d226062d4b63281ffeb8c852da9430dc50b6732
                                                     <rect key="frame" x="0.0" y="0.0" width="343" height="154"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bU-8A-TkA">
                                                     <rect key="frame" x="20" y="67" width="303" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-<<<<<<< HEAD
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-=======
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
->>>>>>> 6d226062d4b63281ffeb8c852da9430dc50b6732
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -220,6 +211,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="cax-jF-VAW"/>
                         <segue destination="Oa5-2i-IwX" kind="relationship" relationship="viewControllers" id="trB-39-J1C"/>
+                        <segue destination="Rhh-VL-m8T" kind="relationship" relationship="viewControllers" id="UTM-gc-Gxm"/>
                         <segue destination="wXb-Y5-AJC" kind="relationship" relationship="viewControllers" id="Rkc-MU-DXn"/>
                         <segue destination="ZXC-As-kwg" kind="relationship" relationship="viewControllers" id="mXZ-nq-aw5"/>
                     </connections>
@@ -239,8 +231,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="miF-ky-Fgd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracking users purchases" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqJ-aE-Aea">
-                                <rect key="frame" x="16.5" y="316" width="342" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqJ-aE-Aea">
+                                <rect key="frame" x="95.5" y="316" width="184" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -261,7 +253,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8f7-SM-ar2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1644" y="879"/>
+            <point key="canvasLocation" x="1056.8" y="868.51574212893559"/>
+        </scene>
+        <!--User-->
+        <scene sceneID="e3N-sF-zee">
+            <objects>
+                <viewController id="Rhh-VL-m8T" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hgw-VC-k3E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpack" translatesAutoresizingMaskIntoConstraints="NO" id="QrZ-KJ-Ljz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooc-CQ-dX1">
+                                <rect key="frame" x="95.5" y="316" width="184" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ooc-CQ-dX1" firstAttribute="centerY" secondItem="Hgw-VC-k3E" secondAttribute="centerY" id="EoU-8W-Wee"/>
+                            <constraint firstItem="QrZ-KJ-Ljz" firstAttribute="top" secondItem="Hgw-VC-k3E" secondAttribute="top" id="ErH-im-jR2"/>
+                            <constraint firstItem="ooc-CQ-dX1" firstAttribute="centerX" secondItem="Hgw-VC-k3E" secondAttribute="centerX" id="G2E-yG-SRb"/>
+                            <constraint firstAttribute="bottom" secondItem="QrZ-KJ-Ljz" secondAttribute="bottom" id="c7v-iu-XqZ"/>
+                            <constraint firstItem="QrZ-KJ-Ljz" firstAttribute="leading" secondItem="IFV-iF-nrb" secondAttribute="leading" id="kgO-dT-ZvJ"/>
+                            <constraint firstItem="QrZ-KJ-Ljz" firstAttribute="trailing" secondItem="IFV-iF-nrb" secondAttribute="trailing" id="wP1-fL-pd6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IFV-iF-nrb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="User" image="user" id="ca6-Eq-S9c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ujh-wK-lQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="874"/>
         </scene>
         <!--Notification-->
         <scene sceneID="puU-re-xXA">
@@ -274,8 +301,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bay" translatesAutoresizingMaskIntoConstraints="NO" id="fzQ-jD-L7F">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display users notification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MO-nj-Xlw">
-                                <rect key="frame" x="19.5" y="316" width="336" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MO-nj-Xlw">
+                                <rect key="frame" x="95.5" y="316" width="184" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -309,11 +336,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane" translatesAutoresizingMaskIntoConstraints="NO" id="aAZ-lW-nK2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1e-IF-r5K">
-                                <rect key="frame" x="14.5" y="316" width="346" height="35"/>
-                                <string key="text">Insert login with facebook
- 
-</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1e-IF-r5K">
+                                <rect key="frame" x="95.5" y="316" width="184" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -334,14 +358,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Po-Fg-Krz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3176.8000000000002" y="871.21439280359823"/>
+            <point key="canvasLocation" x="3178" y="872"/>
         </scene>
     </scenes>
     <resources>
-<<<<<<< HEAD
-=======
         <image name="backpack" width="1322.5" height="992"/>
->>>>>>> 6d226062d4b63281ffeb8c852da9430dc50b6732
         <image name="bay" width="1728" height="1152"/>
         <image name="car" width="1728" height="1152"/>
         <image name="more" width="25" height="25"/>
@@ -349,5 +370,6 @@
         <image name="plane" width="2000" height="1333"/>
         <image name="shop" width="25" height="25"/>
         <image name="tracking" width="25" height="25"/>
+        <image name="user" width="25" height="25"/>
     </resources>
 </document>

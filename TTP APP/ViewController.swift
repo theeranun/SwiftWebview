@@ -14,13 +14,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    //var slideImages = [UIImage(named: "banner1"), UIImage(named: "banner2"), UIImage(named: "banner3")]
-    
-<<<<<<< HEAD
     var slideImages: [String] = ["banner1", "banner2", "banner3", "banner4"]
-=======
-    var slideImages: [String] = ["banner1", "banner2", "banner3"]
->>>>>>> 6d226062d4b63281ffeb8c852da9430dc50b6732
     var frame = CGRect(x: 0, y: 0, width: 0, height: 200)
     
     var presenter: ProductPresenter!

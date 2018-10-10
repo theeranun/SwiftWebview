@@ -16,26 +16,21 @@ class ProductDatasource: NSObject, UICollectionViewDataSource {
     
     func fill(){
         objects = [
-           //Booking waiting on white label
+            //Booking waiting on white label
             Product(image: UIImage(named: "booking")!, title: "Accomodations", url: "https://www.booking.com/index.en-gb.html?label=gen173nr-1DCAEoggJCAlhYSDNYBGjdAYgBAZgBLrgBB8gBDNgBA-gBAZICAXmoAgM;sid=4c71fdcc4ce8dae4969e62c107a7553c;keep_landing=1&sb_price_type=total&"),
             //Rental Car need official deep linking
             Product(image: UIImage(named: "rentalcars")!, title: "Car Rental", url: "https://www.rentalcars.com"),
-           //Klook need official deep linking
+            //Klook need official deep linking
             Product(image: UIImage(named: "klook")!, title: "Excursion", url: "https://www.klook.com"),
-<<<<<<< HEAD
-           //Bellugg testing API
+            //Bellugg testing API
             Product(image: UIImage(named: "bellugg")!, title: "Baggage Delivery", url: "https://secretbase.bellugg.com/booking/luggagedelivery?agent_id=59"),
-           //12GoAsia Affiliate API
+            //12GoAsia Affiliate API
             Product(image: UIImage(named: "12goasia")!, title: "TravelTickets", url: "https://12go.asia/?z=2120044"),
-           //Grab needs official deep linking
-=======
-            Product(image: UIImage(named: "bellugg")!, title: "Baggage Delivery", url: "https://system.bellugg.com/Booking/LuggageDelivery"),
-            Product(image: UIImage(named: "12goasia")!, title: "TravelTickets", url: "https://12go.asia/?z=2120044"),
->>>>>>> 6d226062d4b63281ffeb8c852da9430dc50b6732
+            //Grab needs official deep linking
             Product(image: UIImage(named: "grab")!, title: "Taxi", url: "https://www.grab.com/th/en/"),
-           //Pamba needs official deep linking
+            //Pamba needs official deep linking
             Product(image: UIImage(named: "pamba")!, title: "RideShare", url: "https://www.pambashare.com/"),
-           //Now needs official deep linking
+            //Now needs official deep linking
             Product(image: UIImage(named: "now")!, title: "Food Delivery", url: "https://www.now.in.th"),
         ]
     }

@@ -16,13 +16,6 @@ class ProductPresenter: NSObject, UISearchBarDelegate, UICollectionViewDelegate,
     var estimateWidth = 160.0
     var cellMarginSize = 16.0
     
-<<<<<<< HEAD
-    //add or remove banners 
-    var slideImages = [UIImage(named: "banner1"), UIImage(named: "banner2"), UIImage(named: "banner3"), UIImage(named: "banner4")]
-=======
-    var slideImages = [UIImage(named: "banner1"), UIImage(named: "banner2"), UIImage(named: "banner3")]
->>>>>>> 6d226062d4b63281ffeb8c852da9430dc50b6732
-    
     init(viewController: ViewController?) {
         super.init()
         
