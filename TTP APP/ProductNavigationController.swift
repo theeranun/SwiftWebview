@@ -9,7 +9,7 @@
 import UIKit
 
 class ProductNavigationController: UINavigationController {
-
+    
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return topViewController?.preferredStatusBarStyle ?? .lightContent
     }
