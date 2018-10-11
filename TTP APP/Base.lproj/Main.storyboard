@@ -158,12 +158,20 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="EwD-iA-4OW">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="EwD-iA-4OW" firstAttribute="centerY" secondItem="9zG-89-dPG" secondAttribute="centerY" id="Khi-Dt-DFZ"/>
+                            <constraint firstItem="EwD-iA-4OW" firstAttribute="centerX" secondItem="9zG-89-dPG" secondAttribute="centerX" id="RYs-MM-6Kd"/>
                             <constraint firstItem="Ill-mj-g9R" firstAttribute="top" secondItem="9zG-89-dPG" secondAttribute="top" constant="80" id="VuM-HG-PVw"/>
                             <constraint firstItem="Ill-mj-g9R" firstAttribute="leading" secondItem="TRD-ll-Yca" secondAttribute="leading" id="Wem-sv-8qx"/>
                             <constraint firstItem="Ill-mj-g9R" firstAttribute="bottom" secondItem="TRD-ll-Yca" secondAttribute="bottom" id="g2E-gT-ujd"/>
+                            <constraint firstItem="EwD-iA-4OW" firstAttribute="centerY" secondItem="9zG-89-dPG" secondAttribute="centerY" id="g8s-Ap-d0q"/>
+                            <constraint firstItem="EwD-iA-4OW" firstAttribute="centerX" secondItem="9zG-89-dPG" secondAttribute="centerX" id="nG0-PU-6NV"/>
                             <constraint firstItem="Ill-mj-g9R" firstAttribute="trailing" secondItem="TRD-ll-Yca" secondAttribute="trailing" id="vgB-Ye-OfK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TRD-ll-Yca"/>
@@ -172,7 +180,8 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="hzd-jg-FS6"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="WebView" destination="Ill-mj-g9R" id="hMS-AY-uyq"/>
+                        <outlet property="activityIndicator" destination="EwD-iA-4OW" id="PA3-oj-iAw"/>
+                        <outlet property="webView" destination="Ill-mj-g9R" id="Whk-rF-wZS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOq-ww-9YS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -292,7 +301,7 @@
         <!--Settings-->
         <scene sceneID="lBC-3K-RNw">
             <objects>
-                <viewController id="ZXC-As-kwg" sceneMemberID="viewController">
+                <viewController id="ZXC-As-kwg" customClass="LoginViewController" customModule="TTP_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qbz-Ut-egs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,8 +309,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane" translatesAutoresizingMaskIntoConstraints="NO" id="aAZ-lW-nK2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings and Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1e-IF-r5K">
-                                <rect key="frame" x="61.5" y="316" width="252" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Logged In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1e-IF-r5K">
+                                <rect key="frame" x="20" y="88" width="335" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6ap-Ih-YqX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -309,20 +321,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="G1e-IF-r5K" firstAttribute="centerY" secondItem="qbz-Ut-egs" secondAttribute="centerY" id="4IR-Jp-NCF"/>
+                            <constraint firstItem="G1e-IF-r5K" firstAttribute="top" secondItem="iDK-c2-mm9" secondAttribute="top" constant="24" id="86o-dw-8hW"/>
                             <constraint firstItem="aAZ-lW-nK2" firstAttribute="trailing" secondItem="iDK-c2-mm9" secondAttribute="trailing" id="Cxs-Lw-Z33"/>
+                            <constraint firstItem="G1e-IF-r5K" firstAttribute="leading" secondItem="iDK-c2-mm9" secondAttribute="leading" constant="20" id="Frw-RX-13H"/>
                             <constraint firstAttribute="bottom" secondItem="aAZ-lW-nK2" secondAttribute="bottom" id="MhY-Hh-AgY"/>
-                            <constraint firstItem="G1e-IF-r5K" firstAttribute="centerX" secondItem="qbz-Ut-egs" secondAttribute="centerX" id="Z2T-RJ-6n4"/>
+                            <constraint firstItem="iDK-c2-mm9" firstAttribute="trailing" secondItem="G1e-IF-r5K" secondAttribute="trailing" constant="20" id="Qi3-dc-GIX"/>
                             <constraint firstItem="aAZ-lW-nK2" firstAttribute="leading" secondItem="iDK-c2-mm9" secondAttribute="leading" id="f4r-AJ-Vee"/>
                             <constraint firstItem="aAZ-lW-nK2" firstAttribute="top" secondItem="qbz-Ut-egs" secondAttribute="top" id="mar-Jk-2DF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iDK-c2-mm9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="more" id="RVh-Py-g0f"/>
+                    <connections>
+                        <outlet property="lblStatus" destination="G1e-IF-r5K" id="ABo-Dj-Evk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Po-Fg-Krz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3178" y="872"/>
+            <point key="canvasLocation" x="3176.8000000000002" y="871.21439280359823"/>
         </scene>
     </scenes>
     <resources>

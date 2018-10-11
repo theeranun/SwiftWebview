@@ -11,7 +11,8 @@ import WebKit
 
 class WebViewController: UIViewController {
 
-    @IBOutlet weak var WebView: WKWebView!
+    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var urlString = String()
     var navTitle = String()
@@ -24,18 +25,20 @@ class WebViewController: UIViewController {
         let webUrl = URL(string: urlString)
         let request = URLRequest(url: webUrl!)
         
-        WebView.load(request)
+        webView.load(request)
+        webView.addObserver(self, forKeyPath: #keyPath(WKWebView.isLoading), options: .new, context: nil)
     }
     
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if keyPath == "loading" {
+            if webView.isLoading {
+                activityIndicator.startAnimating()
+                activityIndicator.isHidden = false
+            } else {
+                activityIndicator.stopAnimating()
+            }
+        }
     }
-    */
 
 }

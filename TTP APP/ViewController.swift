@@ -23,7 +23,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         
         title = "Tuk Tuk Pass"
-        
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
@@ -34,8 +33,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             frame.origin.x = scrollView.frame.size.width * CGFloat(i)
             frame.size.height = 200
             frame.size = scrollView.frame.size
-            
-            print(frame.height)
             
             let imageView = UIImageView(frame: frame)
             imageView.image = UIImage(named: slideImages[i])
