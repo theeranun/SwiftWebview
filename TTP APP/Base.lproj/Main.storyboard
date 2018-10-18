@@ -309,30 +309,35 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane" translatesAutoresizingMaskIntoConstraints="NO" id="aAZ-lW-nK2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wmr-D4-LQ8">
+                                <rect key="frame" x="120" y="75" width="135" height="141"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Logged In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1e-IF-r5K">
-                                <rect key="frame" x="20" y="88" width="335" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="6ap-Ih-YqX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <rect key="frame" x="20" y="224" width="335" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="G1e-IF-r5K" firstAttribute="top" secondItem="iDK-c2-mm9" secondAttribute="top" constant="24" id="86o-dw-8hW"/>
+                            <constraint firstItem="G1e-IF-r5K" firstAttribute="leading" secondItem="iDK-c2-mm9" secondAttribute="leading" constant="20" id="3t3-L5-W5e"/>
+                            <constraint firstItem="G1e-IF-r5K" firstAttribute="top" secondItem="wmr-D4-LQ8" secondAttribute="bottom" constant="8" id="561-Ik-ko6"/>
                             <constraint firstItem="aAZ-lW-nK2" firstAttribute="trailing" secondItem="iDK-c2-mm9" secondAttribute="trailing" id="Cxs-Lw-Z33"/>
-                            <constraint firstItem="G1e-IF-r5K" firstAttribute="leading" secondItem="iDK-c2-mm9" secondAttribute="leading" constant="20" id="Frw-RX-13H"/>
+                            <constraint firstItem="wmr-D4-LQ8" firstAttribute="top" secondItem="iDK-c2-mm9" secondAttribute="top" constant="11" id="Dbv-Aj-p0m"/>
+                            <constraint firstItem="wmr-D4-LQ8" firstAttribute="leading" secondItem="iDK-c2-mm9" secondAttribute="leading" constant="120" id="Eoa-ev-0v8"/>
+                            <constraint firstItem="iDK-c2-mm9" firstAttribute="trailing" secondItem="G1e-IF-r5K" secondAttribute="trailing" constant="20" id="HmM-Jh-hQ1"/>
+                            <constraint firstItem="iDK-c2-mm9" firstAttribute="trailing" secondItem="wmr-D4-LQ8" secondAttribute="trailing" constant="120" id="LNb-wz-1DZ"/>
                             <constraint firstAttribute="bottom" secondItem="aAZ-lW-nK2" secondAttribute="bottom" id="MhY-Hh-AgY"/>
-                            <constraint firstItem="iDK-c2-mm9" firstAttribute="trailing" secondItem="G1e-IF-r5K" secondAttribute="trailing" constant="20" id="Qi3-dc-GIX"/>
                             <constraint firstItem="aAZ-lW-nK2" firstAttribute="leading" secondItem="iDK-c2-mm9" secondAttribute="leading" id="f4r-AJ-Vee"/>
                             <constraint firstItem="aAZ-lW-nK2" firstAttribute="top" secondItem="qbz-Ut-egs" secondAttribute="top" id="mar-Jk-2DF"/>
+                            <constraint firstItem="G1e-IF-r5K" firstAttribute="top" secondItem="iDK-c2-mm9" secondAttribute="top" constant="160" id="q9i-F4-9IN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iDK-c2-mm9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="more" id="RVh-Py-g0f"/>
                     <connections>
+                        <outlet property="imageProfile" destination="wmr-D4-LQ8" id="nTX-Yr-uaf"/>
                         <outlet property="lblStatus" destination="G1e-IF-r5K" id="ABo-Dj-Evk"/>
                     </connections>
                 </viewController>
